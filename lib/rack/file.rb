@@ -50,7 +50,7 @@ module Rack
       if available
         serving(env)
       else
-        fail(404, "File not found: #{path_info}")
+        fail(404, "File not found")
       end
     end
 
